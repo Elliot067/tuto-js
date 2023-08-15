@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuto JS</title>
     <script>
-
+        /* Première partie tuto (variables)
        const a = "Tuto";
        const b = "JS";
        const isMajeur = true;
@@ -39,6 +39,43 @@
         },
         [a] : 23
        }
+       
+      
+      const age = 18
+      const pays = 'US'
+      const vraienfrance = pays === 'France' && age === 23
+      const vraienus = pays === 'US' && age === 18
+      if (vraienfrance){
+        console.log("C'est vrai en france")
+      }else if(vraienus){
+        console.log("C'est vrai en us")
+      }
+      const year = 2023
+      const birthyear = prompt("Quel est votre année de naissance ?")
+      const age = year - birthyear
+      if(age <= 13){
+        console.log("Lilo & stitch")
+      }
+      else if(age < 18){
+        console.log("matrix")
+      }
+      else {
+        console.log("Evil dead")
+      }*/
+      const a = prompt('Premier nombre : ')
+      const b = prompt('Deuxieme nombre : ')
+      const e = a * b
+      let signe
+      if(isNaN(e)){
+        console.log("Opération impossible")
+      }
+      if(e > 0){
+       signe = 'positif'
+      }
+      else{
+        signe = 'negatif'
+      }
+      console.log(`${a}* ${b} = ${e} est ${signe}`)
     </script>
 </head>
 <body>
