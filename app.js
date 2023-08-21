@@ -106,4 +106,47 @@
       console.log('Bravo')
 
       ----------------------------------
+      
+      
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
+      
+      const randomNbr = getRandomInt(10)
+
+      console.log(randomNbr)
+
+      function isRight(n){
+
+        return randomNbr === n
+        
+      }
+
+      function guess () {
+        const nbr = prompt("Choissisez un nombre entre 1 et 10") * 1
+        return isRight(nbr)
+  
+      }
+
+
+      for (i=0; i < 3; i++){
+        if(guess()){
+          console.log("Bravo")
+          break;
+        }
+        else if(i === 2){
+          console.log("Game over")
+        }
+      }
+      ----------------------------------
        */
+      function isPremier(n){
+        for (let i = n - 1; i > 1; i--) {
+          if(n % i === 0 ){
+            return false
+          }
+        }
+        return true
+      }
+
+      console.log(isPremier(6))
